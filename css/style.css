@@ -1,0 +1,80 @@
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  /* prevent callout to copy image, etc when tap to hold */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* prevent copy paste, to allow, change 'none' to 'text' */
+  background-color: transparent;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.toolbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 48px;
+  background: #424242;
+}
+.about {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  right: 50px;
+  height: 200px;
+  padding: 10px;
+  background-color: #909090;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+.webgl_container {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  right: 0;
+  bottom: 0;
+}
+.iconButton,
+.iconButton:hover,
+.iconButton:active {
+  background-position: 50%, 50%;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  border-radius: 3px;
+  width: 36px;
+  height: 36px;
+  margin: 6px;
+  float: left;
+}
+.iconButton:hover {
+  background-color: #909090;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.iconButton:active {
+  background-color: #b0b0b0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.iconFullscreen {
+  background-image: url(../img/icons/resize5.png);
+}
+.iconInformation {
+  background-image: url(../img/icons/information3.png);
+}
