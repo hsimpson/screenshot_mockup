@@ -11,6 +11,8 @@
 <body>
   <div class="toolbar">
     <div class="iconButton iconFullscreen" data-handler="onToggleFullScreen"></div>
+    <div class="iconButton iconMakeScreenshot" data-handler="onMakeScreenshot"></div>
+
     <div class="iconButton iconInformation" data-handler="onShowInformation"></div>
   </div>
   <div class="webgl_container"></div>
@@ -22,10 +24,33 @@
     </div>
   </div>
 
+  <div class="screenshotContainer">
+    <div class="iconButton iconClose screenshotClose" data-handler="onCloseScreenshot"></div>
+    <div class="screenshotResult"></div>
+    <a class="screenshotDownloadLink" download="screenshot.png" target="_blank">
+      <div class="screenshotDownload">Download</div>
+    </a>
+  </div>
+
+  <div class="stats">
+  </div>
   <!-- js -->
-  <script src="js/three.min.js"></script>
+  <script src="js/three.js"></script>
+  <script src="js/stats.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
   <script src="js/THREEx.FullScreen.js"></script>
   <script src="js/THREEx.WindowResize.js"></script>
+
+  <script src="js/shaders/CopyShader.js"></script>
+  <script src="js/shaders/SSAOShader.js"></script>
+  <script src="js/shaders/FloorShader.js"></script>
+  <script src="js/shaders/DeviceShader.js"></script>
+
+  <script src="js/postprocessing/EffectComposer.js"></script>
+  <script src="js/postprocessing/RenderPass.js"></script>
+  <script src="js/postprocessing/MaskPass.js"></script>
+  <script src="js/postprocessing/ShaderPass.js"></script>
+
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/main.js"></script>
 
